@@ -25,7 +25,7 @@ As a coding boot camp student, I want to take a timed quiz on JavaScript fundame
 - When the game is over, I can save my initials and my score.
 
 ## Demo
-You can view a live demo of the application [here]([link-to-your-live-demo](https://jmckenna01.github.io/Coding-Quiz-App/)).
+You can view a live demo of the application [here](https://jmckenna01.github.io/Coding-Quiz-App/)).
 
 ## Installation
 1. Clone the repository to your local machine.
