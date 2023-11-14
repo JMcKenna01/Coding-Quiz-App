@@ -1,44 +1,31 @@
-<<<<<<< HEAD
-# Coding-Quiz-App
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Coding Quiz</h1>
-        <p>Time: <span id="timer">60</span> seconds</p>
-    </header>
-    <main>
-        <div id="question-container">
-            <h2>Question 1:</h2>
-            <p id="question-text">What is the capital of France?</p>
-            <ul id="choices">
-                <li><button class="choice-btn">Option A</button></li>
-                <li><button class="choice-btn">Option B</button></li>
-                <li><button class="choice-btn">Option C</button></li>
-                <li><button class="choice-btn">Option D</button></li>
-            </ul>
-        </div>
-        <div id="result-container">
-            <p id="result-message"></p>
-            <button id="next-button">Next</button>
-        </div>
-    </main>
-    <footer>
-        <button id="start-button">Start Quiz</button>
-        <form id="initials-form">
-            <label for="initials">Enter Initials:</label>
-            <input type="text" id="initials" maxlength="3" required>
-            <button type="submit" id="submit-button">Submit</button>
-        </form>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
->>>>>>> 650fdf6 (committing untracked files)
+# Coding Quiz
+
+## Table of Contents
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Description
+At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment—perhaps as part of an interview process. This coding quiz app is designed to help you practice coding quiz questions with a timer and high score storage. It features dynamically updated HTML and CSS powered by JavaScript code.
+
+## User Story
+As a coding boot camp student, I want to take a timed quiz on JavaScript fundamentals that stores high scores so that I can gauge my progress compared to my peers.
+
+## Acceptance Criteria
+- When I click the start button, a timer starts, and I am presented with a question.
+- When I answer a question, I am presented with another question.
+- When I answer a question incorrectly, time is subtracted from the clock.
+- When all questions are answered or the timer reaches 0, the game is over.
+- When the game is over, I can save my initials and my score.
+
+## Demo
+You can view a live demo of the application [here](link-to-your-live-demo).
+
+## Installation
+1. Clone the repository to your local machine.
