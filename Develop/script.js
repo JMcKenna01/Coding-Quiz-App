@@ -33,7 +33,7 @@ var timeRemaining = 60;
 var score = 0;
 
 var startButton = document.getElementById("start-button");
-var timerElement = document.getElementById("timer");
+var timerElement = document.getElementById("question-counter");
 var questionContainer = document.getElementById("question-container");
 var questionText = document.getElementById("question-text");
 var choicesList = document.getElementById("choices");
@@ -47,7 +47,7 @@ var submitButton = document.getElementById("submit-button");
 // Function to start the quiz
 function startQuiz() {
     startButton.style.display = "none";
-    timerElement.textContent = timeRemaining;
+    timerElement.textContent = "Time: " + timeRemaining + "s";
     timer = setInterval(countdown, 1000);
     displayQuestion();
 }
@@ -84,7 +84,14 @@ function checkAnswer(event) {
     currentQuestionIndex++;
 
     if (currentQuestionIndex < questions.length) {
+        timerElement.textContent = "Time: " + timeRemaining + "s";
         displayQuestion();
+        resultMessage.textContent = "";
+        nextButton.style.display = "none";
+        var choiceButtons = document.querySelectorAll(".choice-btn");
+        choiceButtons.forEach(function (button) {
+            button.addEventListener("click", checkAnswer);
+        });
     } else {
         endQuiz();
     }
@@ -93,10 +100,11 @@ function checkAnswer(event) {
 // Function to handle the countdown timer
 function countdown() {
     timeRemaining--;
-    timerElement.textContent = timeRemaining;
 
     if (timeRemaining <= 0) {
         endQuiz();
+    } else {
+        timerElement.textContent = "Time: " + timeRemaining + "s";
     }
 }
 
@@ -110,9 +118,19 @@ function endQuiz() {
 
 // Event listeners
 startButton.addEventListener("click", startQuiz);
-nextButton.addEventListener("click", function() {
+nextButton.addEventListener("click", function () {
     currentQuestionIndex++;
-    displayQuestion();
+    if (currentQuestionIndex < questions.length) {
+        displayQuestion();
+        resultMessage.textContent = "";
+        nextButton.style.display = "none";
+        var choiceButtons = document.querySelectorAll(".choice-btn");
+        choiceButtons.forEach(function (button) {
+            button.addEventListener("click", checkAnswer);
+        });
+    } else {
+        endQuiz();
+    }
 });
 initialsForm.addEventListener("submit", saveHighScore);
 
