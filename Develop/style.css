@@ -1,0 +1,125 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background color and font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header section */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Style the main content section */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Style the answer choices */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.choice-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.choice-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Style the result container */
+#result-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result-message {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style the footer section */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#start-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #2980b9;
+}
+
+/* Style the initials form */
+#initials-form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#initials {
+    padding: 5px;
+    margin-right: 10px;
+    width: 50px;
+    text-transform: uppercase;
+}
+
+#submit-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #2980b9;
+}
