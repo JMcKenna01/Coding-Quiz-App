@@ -29,3 +29,21 @@ You can view a live demo of the application [here](link-to-your-live-demo).
 
 ## Installation
 1. Clone the repository to your local machine.
+
+
+## Usage
+1. Open the `index.html` file in your web browser to play the coding quiz.
+2. Click the "Start Quiz" button to begin the quiz.
+3. Answer the quiz questions and see your score at the end.
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+## Contributing
+Contributions are welcome! If you find any issues or want to improve the application, please open an issue or create a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
